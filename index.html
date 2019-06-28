@@ -2,94 +2,83 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>My Personal Page</title>
+	<title>Home</title>
 
-<!-- CSS define format and style-->
-<style>
-	h1 {
-		padding: 20px;
-		text-align: center;
-		vertical-align: middle;
-		background-color: tomato;
-		color: white;
-		text-shadow: 3px 2px peru;
-	}
-	
-	p {
-		text-indent: 40px;
-	}
-	
-	.skills {
-		margin: 40px;
-	}
-
-	.projects {
-		padding: 10px;
-		outline-style: dotted;
-		outline-color: chocolate;
-		margin-bottom: 10px;
-		margin-left: 5%;
-		margin-right: 5%;
-	}
-	.projectTitle {
-		text-align: center;
-	}
-	.projectDescription {
-		text-indent: 40px;
-		margin-left: 10%;
-		margin-right: 10%;
-		color: indianred;
-
-	}
-
-	h5 {
-		text-align: right;
-	}
-</style>
-	
+	<style>
+		body {
+			margin: 0;
+		}
+		ul {
+			position: fixed;
+			top: 0;
+			margin: 0;
+			padding: 0;
+			width: 100%;
+			background-color: #333;
+			list-style-type: none;
+			overflow: hidden;
+		}
+		li{
+			float: right;
+		}
+		li a {
+			text-decoration: none;
+			padding: 14px 16px;
+			display: block;
+			color: white;
+			text-decoration: none;
+		}
+		
+		li a:hover:not(.active) {
+  			background-color: salmon;
+		}
+		.active{
+			background-color: #000;
+		}
+		
+	</style>
 </head>
 
-
-<body style = "background-color: #faebd7;">
-	<h1>Tsz Ting (Ashley) Yu</h1>
-	<p> Hey there, my name is Ashely and I am a computer sciece major student pursuing a bachelor degree at San Jose State University. I am a big foodie and love capturing beautiful moments happenning in life. blah blah blah......................</p>
-
-	<h2> About me </h2>
-	<p>Pride and Prejudice is an 1813 romantic novel of manners written by Jane Austen. The novel follows the character development of Elizabeth Bennet, the dynamic protagonist of the book, who learns about the repercussions of hasty judgments and eventually comes to appreciate the difference between superficial goodness and actual goodness. A classic piece filled with comedy, its humor lies in its honest depiction of manners, education, marriage and money during the Regency era in Great Britain.</p>
+<body>
 	
-	<p>Mr. Bennet of Longbourn estate has five daughters, but because his property is entailed it can only be passed from male heir to male heir. Consequently, Mr. Bennet's family will be destitute upon his death. Because his wife also lacks an inheritance, it is imperative that at least one of the girls marry well to support the others upon his death, which is a motivation that drives the plot. Jane Austen's opening line--"It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife"-- is a sentence filled with irony and sets the tone for the book. The novel revolves around the importance of marrying for love, not simply for economic gain or social prestige, despite the communal pressure to make a good (i.e., wealthy) match.</p>
-	<div class = "skills">
-		<h3> Skills </h3>
-		<ul>
-			<li> Java </li>
-			<li> C++ </li>
-			<li> Python </li>
-			<li> HTML </li>
-		</ul>
-	</div>
-	
+	<ul>
+		<li><a href="gallery.html"> Gallery</a></li>
+		<li><a href="about.html"> About Us</a></li>
+		<li> <a class = "active" href="#Home"> Home </a></li>
 
-	<h2> Projects </h2>
-		<div class = "projects"> 
-				<h3 class = "projectTitle"> Project 1</h3>
-				<p class = "projectDescription"> Project descriptions provide the following details to the applicants: the problem the project will address, a set of goals for the project, the overall objectives for the project, as well as a project plan that describes the activities the members will undertake.  The project description also includes the location of the project, the length of the project, and any benefits you will receive while serving on the project.</p>
-		</div>
-		<div class = "projects"> 
-				<h3 class = "projectTitle"> Project 2</h3>
-				<p class = "projectDescription">Project descriptions provide the following details to the applicants: the problem the project will address, a set of goals for the project, the overall objectives for the project, as well as a project plan that describes the activities the members will undertake.  The project description also includes the location of the project, the length of the project, and any benefits you will receive while serving on the project.</p>
-		</div>
-		<div  class = "projects">
-				<h3 class = "projectTitle"> Project 3</h3>
-				<p class = "projectDescription">Project descriptions provide the following details to the applicants: the problem the project will address, a set of goals for the project, the overall objectives for the project, as well as a project plan that describes the activities the members will undertake.  The project description also includes the location of the project, the length of the project, and any benefits you will receive while serving on the project.Project descriptions provide the following details to the applicants: the problem the project will address, a set of goals for the project, the overall objectives for the project, as well as a project plan that describes the activities the members will undertake.  The project description also includes the location of the project, the length of the project, and any benefits you will receive while serving on the project.</p>
-		</div>
-
-	<h2> Informations </h2>
-	<ul style = "list-style-type: none;">
-		<li><a href="mailto: yashleycaviar@gmail.com"> Email </a></li>
-		<li><a href="https://drive.google.com/file/d/13SpCnaW5z9uK4mw0rkeQ8fz7UuZcLF9J/view?usp=sharing" target="_blank"> Resume </a></li>
-		<li><a href="https://www.instagram.com/caviar_luv/?hl=en" target="_blank"> Instagram </a></li>
 	</ul>
+	
 
-	<h5><a href="page1.html"> <ins>next</ins></a></h5>
-</body> 
+	<div style = "padding: 30px; height: 1500px; margin-top:30px;">
+		<p>Some text some text some text some text..</p>
+		<p>Some text some text some text some text..</p>
+		<p>Some text some text some text some text..</p>
+		<p>Some text some text some text some text..</p>
+		<p>Some text some text some text some text..</p>
+		<p>Some text some text some text some text..</p>
+		<p>Some text some text some text some text..</p>
+		<p>Some text some text some text some text..</p>
+		<p>Some text some text some text some text..</p>
+		<p>Some text some text some text some text..</p>
+		<p>Some text some text some text some text..</p>
+		<p>Some text some text some text some text..</p>
+		<p>Some text some text some text some text..</p>
+		<p>Some text some text some text some text..</p>
+		<p>Some text some text some text some text..</p>
+		<p>Some text some text some text some text..</p>
+		<p>Some text some text some text some text..</p>
+		<p>Some text some text some text some text..</p>
+		<p>Some text some text some text some text..</p>
+		<p>Some text some text some text some text..</p>
+		<p>Some text some text some text some text..</p>
+		<p>Some text some text some text some text..</p>
+		<p>Some text some text some text some text..</p>
+		<p>Some text some text some text some text..</p>
+		<p>Some text some text some text some text..</p>
+		<p>Some text some text some text some text..</p>
+		<p>Some text some text some text some text..</p>
+		<p>Some text some text some text some text..</p>
+		<p>Some text some text some text some text..</p>
+	  </div>
+</body>
 </html>
