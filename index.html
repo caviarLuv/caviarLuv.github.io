@@ -1,99 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
+	<head>
+		<meta charset="UTF-8">
 
 
-	<link rel="icon" type="image/ico" href="icon/titleIcon.JPG" />
-	<title>Home</title>
-	
-	<style>
-		body {
-			margin: 0;
-		}
-		ul {
-			position: fixed;
-			top: 0;
-			margin: 0;
-			padding: 0;
-			width: 100%;
-			background-color: #333;
-			list-style-type: none;
-			overflow: hidden;
-		}
-		li{
-			float: right;
-		}
-		li a {
-			text-decoration: none;
-			padding: 14px 16px;
-			display: block;
-			color: white;
-			text-decoration: none;
-		}
+		<link rel="icon" type="image/ico" href="icon/titleIcon.JPG" />
+		<link rel="stylesheet" href="navigation.css">
+		<link rel="stylesheet" href="footer.css">
+		<link rel="stylesheet" href="content.css">
+		<link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet'>
+		<title>Home</title>
 		
-		li a:hover:not(.active) {
-  			background-color: salmon;
-		}
-		.active{
-			background-color: #000;
-		}
+		<style>
+
+			.header {
+				height: 50px;
+			}		
+
+			.content_1 {
+				text-align: center;
+			}
+
+			.content_2{
+				margin-top: 10%;
+			}
+
+			#highlights {
+				
+				border-color: lightgray;	
+				border-style: dashed;
+				border-width: 3px;
+				list-style: none;
+				text-align: center;
+				padding:0px;
+				margin:0;
+				overflow: auto;
+			}
+
+			img.h_pics {
+				width: 100%;
+			}
+
+			li.h_pics {
+				display: block;
+				width:32%;
+				padding: 1% 1% 1% 0.3%;
+				float: left;
+				text-decoration: none;
+			}
+
+			p.h_pics {
+				margin-top: 0;
+				text-indent: 15px;
+				font-size: 12px;
+				text-align: justify;
+				padding-left: 5%;
+				padding-right: 5%;
+			}
+			
+			h2.content_2 {
+				text-align: left;
+				font-size: 24px;
+			}
+		</style>
+	</head>
+
+	<body>
 		
-		li.name {
-			font-family: "Courier New", Courier, monospace;
-			padding: 4px;
-			margin-left: 16px;
-			font-size: 34px;
-			float:left;
-			color: white;
-			display: block;
-		}
+		<div class = "header">
+			<ul class = "navigation">
+				<li class = "siteName"> Personal Site </li>
+				<li><a class = "menuList" href="gallery.html"> Gallery</a></li>
+				<li><a class = "menuList" href="about.html"> About Me</a></li>
+				<li class = "menuList" id = "active"> Home </a></li>
 
-	</style>
-</head>
+			</ul>
+		</div>	
 
-<body>
-	
+		
+		<div class = content>
+			<div class = "content_1">
+			<img src="image/banner.JPG" alt="banner" width = 70% height = 70%>
+			<p class = "paragraph">Some text some text some text some text..Some text some text some text some text..Some text some text some text some text..Some text some text some text some text..Some text some text some text some text..Some text some text some text some text..Some text some text some text some text..Some text some text some text some text..Some text some text some text some text..Some text some text some text some text..Some text some text some text some text..Some text some text some text some text..Some text some text some text some text..Some text some text some text some text..Some text some text some text some text..Some text some text some text some text..Some text some text some text some text..</p>
+			</div>
 
-	<ul>
-		<li class = "name"> Personal Site </li>
-		<li><a href="gallery.html"> Gallery</a></li>
-		<li><a href="about.html"> About Us</a></li>
-		<li> <a class = "active" href="#Home"> Home </a></li>
+			<div class = content_2>
+				<h2 class = content_2>What's New</h2>
+				<ul id = highlights>
+					<li class = h_pics> <img class=h_pics src="image/banner.JPG" alt="banner"> <p class = h_pics>Some text some text some text some text..Some text some text some text some text..Some text some text some text some text..Some text some text some text some text..Some text some text some text some text..Some text some text some text some text..Some text some text some text some text..123</p></li>
+					<li class = h_pics> <img class = h_pics src="image/banner.JPG" alt="banner"> <p class = h_pics>2Some text some text some text some text..Some text some text some text some text..Some text some text some text some text..Some text some text some text some text..Some text some text some text some text..Some text some text some text some text..Some text some text some text some text..</p></li>
+					<li class = h_pics> <img class = h_pics src="image/banner.JPG" alt="banner"> <p class = h_pics>3Some text some text some text some text..Some text some text some text some text..Some text some text some text some text..Some text some text some text some text..Some text some text some text some text..Some text some text some text some text..Some text some text some text some text..</p></li>
+				</ul>
+			</div>
+		 </div>
 
-	</ul>
-	
-
-	<div class = body style = "padding: 30px; height: 1500px; margin-top:30px;">
-		<p>Some text some text some text some text..</p>
-		<p>Some text some text some text some text..</p>
-		<p>Some text some text some text some text..</p>
-		<p>Some text some text some text some text..</p>
-		<p>Some text some text some text some text..</p>
-		<p>Some text some text some text some text..</p>
-		<p>Some text some text some text some text..</p>
-		<p>Some text some text some text some text..</p>
-		<p>Some text some text some text some text..</p>
-		<p>Some text some text some text some text..</p>
-		<p>Some text some text some text some text..</p>
-		<p>Some text some text some text some text..</p>
-		<p>Some text some text some text some text..</p>
-		<p>Some text some text some text some text..</p>
-		<p>Some text some text some text some text..</p>
-		<p>Some text some text some text some text..</p>
-		<p>Some text some text some text some text..</p>
-		<p>Some text some text some text some text..</p>
-		<p>Some text some text some text some text..</p>
-		<p>Some text some text some text some text..</p>
-		<p>Some text some text some text some text..</p>
-		<p>Some text some text some text some text..</p>
-		<p>Some text some text some text some text..</p>
-		<p>Some text some text some text some text..</p>
-		<p>Some text some text some text some text..</p>
-		<p>Some text some text some text some text..</p>
-		<p>Some text some text some text some text..</p>
-		<p>Some text some text some text some text..</p>
-		<p>Some text some text some text some text..</p>
-	  </div>
-</body>
+		 <div class = "footer">
+		  	<p id = footer> Ashley 2019 | caviarluv.github.io</p>
+		 </div>
+	</body>
 </html>
