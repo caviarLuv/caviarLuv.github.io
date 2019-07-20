@@ -14,7 +14,7 @@
 	</style>
 </head>
 
-<body onload = "translation(this)">
+<body id = "init" onload = "translation(this)">
 
 	<div class = navigation>
 		<p id = menuIcon> picture here </p>
@@ -37,16 +37,20 @@
 
 <script>
 	function translation(e) {
-
+		var id = e.id;
 		var xhttp = new XMLHttpRequest();
 		xhttp.onreadystatechange = function() {
-			alert(this.readyState);
 			if (this.readyState == 4 && this.status == 200) {
 				document.getElementById("demo").innerHTML = this.responseText;
 			}
 		};
+		if(id == "eng" || id == "init") {
+			xhttp.open("GET", "english.txt", true);
+		}
+		else if(id == "cn") {
+			xhttp.open("GET", "chinese.txt", true);
+		}
 		
-		xhttp.open("GET", "english.txt", true);
 		xhttp.send();
 	}
 </script>
