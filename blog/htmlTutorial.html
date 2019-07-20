@@ -40,13 +40,14 @@
 
 		var xhttp = new XMLHttpRequest();
 		xhttp.onreadystatechange = function() {
-			if (this.readyState == XMLHttpRequest.DONE) {
-				alert(this.status);
+			alert(this.readyState);
+			if (this.readyState == 4 && this.status == 200) {
+				document.getElementById("demo").innerHTML = this.responseText;
 			}
 		};
 		
-		xhttp.open("GET", "https://www.w3schools.com/js/ajax_info.txt", true);
-		xhttp.send(null);
+		xhttp.open("GET", "english.txt", true);
+		xhttp.send();
 	}
 </script>
 </html>
