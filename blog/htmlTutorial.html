@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="icon" type="image/ico" href="../icon/titleIcon.JPG" />
+	<link rel="stylesheet" href="tutorialNav.css">
+	<title>Learning Web Design from Zero</title>
+
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+		}
+	</style>
+</head>
+
+<body onload = "translation(this)">
+
+	<div class = navigation>
+		<p id = menuIcon> picture here </p>
+		<ul class = menu>
+			<li class = menu> <a href="#M1"> Getting Started! </a></li>
+			<li class = menu> <a href="#M2"> The Basics </a> </li>
+			<li class = menu> <a href="#M3"> For the More Advanturous </a></li>
+			<li class = menu> <a href="#M4"> Example </a></li>
+			<li class = subMenu> <a href="#Top"> ^TOP </a> </li>
+			<li class = subMenu id = "cn" onClick = "translation(this)"> CN </li>
+			<li class = subMenu id = "eng"> ENG</li>
+		</ul>
+	</div>
+
+	
+	<div class = content id = "demo">
+		
+	</div>
+</body>
+
+<script>
+	function translation(e) {
+
+		var xhttp = new XMLHttpRequest();
+		xhttp.onreadystatechange = function() {
+			if (this.readyState == XMLHttpRequest.DONE) {
+				alert(xhttp.responseText);
+			}
+		};
+		
+		xhttp.open("GET", "https://www.w3schools.com/js/ajax_info.txt", true);
+		xhttp.send(null);
+	}
+</script>
+</html>
