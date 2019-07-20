@@ -41,7 +41,7 @@
 		var xhttp = new XMLHttpRequest();
 		xhttp.onreadystatechange = function() {
 			if (this.readyState == XMLHttpRequest.DONE) {
-				alert(xhttp.responseText);
+				alert(this.status);
 			}
 		};
 		
