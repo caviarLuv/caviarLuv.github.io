@@ -30,7 +30,7 @@
 	</div>
 
 	
-	<div class = content id = "demo">
+	<div class = content id = "contents">
 		
 	</div>
 </body>
@@ -41,9 +41,8 @@
 		var xhttp = new XMLHttpRequest();
 		var fileName;
 		xhttp.onreadystatechange = function() {
-			alert(this.readyState);
 			if (this.readyState == 4 && this.status == 200) {
-				document.getElementById("demo").innerHTML = this.responseText;
+				document.getElementById("contents").innerHTML = this.responseText;
 			}
 		};
 		if(id == "eng" || id == "init") {
@@ -52,7 +51,7 @@
 		else if(id == "cn") {
 			fileName = "chinese.txt";
 		}
-		xhttp.open("GET", "chinese.txt", true);
+		xhttp.open("GET", fileName, true);
 		xhttp.send();
 	}
 </script>
