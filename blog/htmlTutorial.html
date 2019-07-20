@@ -25,7 +25,7 @@
 			<li class = menu> <a href="#M4"> Example </a></li>
 			<li class = subMenu> <a href="#Top"> ^TOP </a> </li>
 			<li class = subMenu id = "cn" onClick = "translation(this)"> CN </li>
-			<li class = subMenu id = "eng"> ENG</li>
+			<li class = subMenu id = "eng" onClick = "translation(this)"> ENG</li>
 		</ul>
 	</div>
 
@@ -39,18 +39,20 @@
 	function translation(e) {
 		var id = e.id;
 		var xhttp = new XMLHttpRequest();
+		var fileName;
 		xhttp.onreadystatechange = function() {
+			alert(this.readyState);
 			if (this.readyState == 4 && this.status == 200) {
 				document.getElementById("demo").innerHTML = this.responseText;
 			}
 		};
 		if(id == "eng" || id == "init") {
-			xhttp.open("GET", "english.txt", true);
+			fileName = "english.txt";
 		}
 		else if(id == "cn") {
-			xhttp.open("GET", "chinese.txt", true);
+			fileName = "chinese.txt";
 		}
-		
+		xhttp.open("GET", "chinese.txt", true);
 		xhttp.send();
 	}
 </script>
