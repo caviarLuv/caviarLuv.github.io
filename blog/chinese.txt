@@ -3,6 +3,7 @@
 <p class = content> This is a basic tutorial for beginner to learn web design from no previous knowledge on HTML and CSS. The goal of the tutorial is to teach you basic HTML and CSS so that you can create your own website. There are many simlar tutorials out there, however, I found them way too complicated and unexciting to read, so I created my own version. I am by no means a HTML/CSS master, but I hope this website could help you toward your website making dream. </p>
 <h3 class = content> 如果你對歷史感興趣...</h3>
 <p class = content> something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...somet</p>
+<hr class = content>
 </div>
 
 <div class = section>
@@ -26,21 +27,24 @@ You will need a computer to create a website. Pre-installed text editors work fi
 <p class = content>
 For this tutorial, we will be using Gitpage as the server. It is a free server service provided by Github. To use Gitpage, you have to have a Github account. Here is how to set up Github on your computer.
 </p>
-
+<hr class = content>
 </div>
 
 <div class = section>
 <h1 class = content id = "M2"> 基本知識 </h1>
 <p class = content> something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...</p>
+<hr class = content>
 </div>
 
 <div class = section>
 <h1 class = content id = "M3"> 給想要點挑戰的你 </h1>
 <p class = content> something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...</p>
+<hr class = content>
 </div>
 
 
 <div class = section>
 <h1 class = content id = "M4"> 例子 </h1>
 <p class = content> something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...</p>
+<hr class = content>
 </div>

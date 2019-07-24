@@ -17,6 +17,50 @@
 			.header {
 				height: 50px;
 			}
+
+			.content {
+				width: 80%;
+				padding: 0;
+				margin:30px 10% 0 10%;
+				font-family: "Courier New", Courier, monospace;
+				font-size: 32px;
+				text-align: left;
+			}
+
+			.grid {
+				display: grid;
+				grid-gap: 15px 15px;
+				grid-template-columns: 150px 150px 150px 150px 150px 150px;
+				justify-content: center;
+				padding: 10px;
+
+			}
+
+			.item {
+				//border: 1px solid black;
+				overflow: hidden;		
+			}
+
+			img.item {
+				width: 150px;
+				height: 150px;
+			}
+			
+			div.fullsize{
+				position: fixed;
+				visibility: hidden;
+				height: 100%;
+				width:100%;
+				background-color: rgba(0, 0, 0, 0.7);
+				transition: 0.1s;
+			}
+			
+			#fullpic {
+				padding-top: 30px;
+				width: 100%;
+				height: 80%;
+				object-fit: contain;
+			}
 		</style>
 	</head>
 	<body>
@@ -29,12 +73,58 @@
 		</ul>
 		</div>
 
-		<div class = content>
-			
+		<div class = "fullsize" onClick = "exitFullsize()">
+			<img id = "fullpic" src="image/gallery/fullsize/photo_01.JPG" alt=""> 		
 		</div>
 
+		<div class = "content">
+			Photographs
+			<div class = "grid">
+				<div class = "item"><img class = "item" src="image/gallery/icon/photo_01.JPG" alt="" onClick = "showFullsize('photo_01.JPG')"></div>
+				<div class = "item"><img class = "item" src="image/gallery/icon/photo_02.JPG" alt=""onClick = "showFullsize('photo_02.JPG')"></div>
+				<div class = "item"><img class = "item" src="image/gallery/icon/photo_03.JPG" alt="" onClick = "showFullsize('photo_03.JPG')"></div>
+				<div class = "item"><img class = "item" src="image/gallery/icon/photo_04.JPG" alt="" onClick = "showFullsize('photo_04.JPG')"></div>
+				<div class = "item"><img class = "item" src="image/gallery/icon/photo_05.JPG" alt="" onClick = "showFullsize('photo_05.JPG')"></div>
+				<div class = "item"><img class = "item" src="image/gallery/icon/photo_06.JPG" alt="" onClick = "showFullsize('photo_06.JPG')"></div>
+				<div class = "item"><img class = "item" src="image/gallery/icon/photo_07.JPG" alt="" onClick = "showFullsize('photo_07.JPG')"></div>
+				<div class = "item"><img class = "item" src="image/gallery/icon/photo_08.JPG" alt="" onClick = "showFullsize('photo_08.JPG')"></div>
+			</div>
+			Arts
+			<div class = "grid">
+				<div class = "item"> <img class = "item" src="image/gallery/icon/art_01.JPG" alt="" onClick = "showFullsize('art_01.JPG')"> </div>
+				<div class = "item"> <img class = "item" src="image/gallery/icon/art_02.JPG" alt="" onClick = "showFullsize('art_02.JPG')"> </div>
+			</div>
+			Projects
+			<div class = "grid">
+				<div class = "item"></div>
+			</div>
+			
+		</div>
+	
 		<div class = "footer">
-		  	<p id = footer> Ashley 2019 | caviarluv.github.io</p>
+		  	<p id = "footer"> Ashley 2019 | caviarluv.github.io</p>
 		 </div>
 	</body>
+
+	<script>
+		var fullLink = "image/gallery/fullsize/";
+		function showFullsize(name) {
+			var ary = document.getElementsByClassName("fullsize");
+			var final = fullLink + name;
+			var notScrollable = document.getElementsByTagName("body");
+			notScrollable[0].style.overflow = "hidden";
+			for(i = 0; i<ary.length; i++) {
+				ary[i].style.visibility = "visible";
+			}
+			document.getElementById("fullpic").src = final;
+		}
+		function exitFullsize() {
+			var ary = document.getElementsByClassName("fullsize");
+			var scrollable = document.getElementsByTagName("body");
+			scrollable[0].style.overflow = "auto";
+			for(i = 0; i<ary.length; i++) {
+				ary[i].style.visibility = "hidden";
+			}
+		}
+	</script>
 </html>

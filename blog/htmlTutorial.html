@@ -16,27 +16,27 @@
 </head>
 
 <body>
-
-	<div class = navigation>
+	<div class = navigation onmouseenter= "addOil()"  onmouseleave="goneOil()" >
 		<img id = menuIcon src="menuIcon.png" alt=""></img>
 		<ul class = menu>
 			<li class = subMenu id = "reset" onClick = "activation(this)"> <a href="#Top"> ^TOP </a> </li>
-			<li class = subMenu id = "cn" onClick = "translation(this)"> ZH </li>
-			<li class = subMenu id = "eng" onClick = "translation(this)"> ENG</li>
 			<li class = menu onClick = "activation(this)"> <a href="#M1"> Getting Started! </a></li>
 			<li class = menu onClick = "activation(this)"> <a href="#M2"> The Basics </a> </li>
 			<li class = menu onClick = "activation(this)"> <a href="#M3"> For the More Advanturous </a></li>
 			<li class = menu onClick = "activation(this)"> <a href="#M4"> Example </a></li>
+			<li class = subMenu id = "cn" onClick = "translation(this)"> Chinese </li>
+			<li class = subMenu id = "eng" onClick = "translation(this)"> English</li>
 		</ul>
 	</div>
-
-	
+			
 	<div class = content id = "contents">
+	<img id = addOil src="addOil.png" alt="">
 		<div class = section>
 			<h1 class = content id = "Top"> Learning Web Design from Zero </h1>
 			<p class = content> This is a basic tutorial for beginner to learn web design from no previous knowledge on HTML and CSS. The goal of the tutorial is to teach you basic HTML and CSS so that you can create your own website. There are many simlar tutorials out there, however, I found them way too complicated and unexciting to read, so I created my own version. I am by no means a HTML/CSS master, but I hope this website could help you toward your website making dream. </p>
 			<h3 class = content> If you are interested in the HISTORY...</h3>
 			<p class = content> something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...somet</p>
+			<hr class = content>
 		</div>
 
 		<div class = section>
@@ -60,23 +60,26 @@
 			<p class = content>
 			For this tutorial, we will be using Gitpage as the server. It is a free server service provided by Github. To use Gitpage, you have to have a Github account. Here is how to set up Github on your computer.
 			</p>
-
+			<hr class = content>
 		</div>
 
 		<div class = section>
 			<h1 class = content id = "M2"> The Basics </h1>
-			<p class = content> something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...</p>
+			<p class = content> something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...123something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something..END</p>
+			<hr class = content>
 		</div>
 
 		<div class = section>
 			<h1 class = content id = "M3"> For the More Advanturous </h1>
 			<p class = content> something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...</p>
+			<hr class = content>
 		</div>
 
 
 		<div class = section>
 			<h1 class = content id = "M4"> Example </h1>
 			<p class = content> something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...</p>
+			<hr class = content>
 		</div>
 	</div>
 </body>
@@ -103,6 +106,7 @@
 
 	function activation(e) {
 		var previous = document.getElementById("active");
+
 		if(previous != null) {
 			previous.id = null;
 		}
@@ -110,5 +114,14 @@
 			e.id = "active";	
 		}
 	}
+
+	function addOil() {
+		document.getElementById("addOil").style.visibility = "visible";
+	}
+
+	function goneOil() {
+		document.getElementById("addOil").style.visibility = "hidden";
+	}
+
 </script>
 </html>

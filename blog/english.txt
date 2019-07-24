@@ -1,46 +1,49 @@
-<div class = section>
-<h1 class = content id = "Top"> Learning Web Design from Zero </h1>
-<p class = content> This is a basic tutorial for beginner to learn web design from no previous knowledge on HTML and CSS. The goal of the tutorial is to teach you basic HTML and CSS so that you can create your own website. There are many simlar tutorials out there, however, I found them way too complicated and unexciting to read, so I created my own version. I am by no means a HTML/CSS master, but I hope this website could help you toward your website making dream. </p>
-<h3 class = content> If you are interested in the HISTORY...</h3>
-<p class = content> something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...somet</p>
-</div>
+        <div class = section>
+            <h1 class = content id = "Top"> Learning Web Design from Zero </h1>
+            <p class = content> This is a basic tutorial for beginner to learn web design from no previous knowledge on HTML and CSS. The goal of the tutorial is to teach you basic HTML and CSS so that you can create your own website. There are many simlar tutorials out there, however, I found them way too complicated and unexciting to read, so I created my own version. I am by no means a HTML/CSS master, but I hope this website could help you toward your website making dream. </p>
+            <h3 class = content> If you are interested in the HISTORY...</h3>
+            <p class = content> something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...somet</p>
+            <hr class = content>
+        </div>
 
-<div class = section>
-<h1 class = content id = "M1"> Getting Started! </h1>
-<p class = content> What you will need in Web Development-- </p>
-<ul class = content>
-<li> Computer with text editor installed </li>
-<li> Notebook and Pen </li>
-<li> Passion :) </li>
-</ul>
-<p class = content> Useful resources--
-<span><ul class = content>
-	<li>Github/Gitpage</li>
-	<li>Sublime Text</li>
-	<li>w3schools.com</li>
-</ul></span>
-</p>
-<p class = content>
-You will need a computer to create a website. Pre-installed text editors work fine in creating a webpage. For Window users, use Notepad; for Mac users, use TextEdit. I recommend installing Sublime Text to for the purpose. It is a free-to-download text editor that has many convienet features. 
-</p>
-<p class = content>
-For this tutorial, we will be using Gitpage as the server. It is a free server service provided by Github. To use Gitpage, you have to have a Github account. Here is how to set up Github on your computer.
-</p>
+        <div class = section>
+            <h1 class = content id = "M1"> Getting Started! </h1>
+            <p class = content> What you will need in Web Development-- </p>
+            <ul class = content>
+                <li> Computer with text editor installed </li>
+                <li> Notebook and Pen </li>
+                <li> Passion :) </li>
+            </ul>
+            <p class = content> Useful resources--
+            <span><ul class = content>
+                <li>Github/Gitpage</li>
+                <li>Sublime Text</li>
+                <li>w3schools.com</li>
+            </ul></span>
+            </p>
+            <p class = content>
+            You will need a computer to create a website. Pre-installed text editors work fine in creating a webpage. For Window users, use Notepad; for Mac users, use TextEdit. I recommend installing Sublime Text to for the purpose. It is a free-to-download text editor that has many convienet features. 
+            </p>
+            <p class = content>
+            For this tutorial, we will be using Gitpage as the server. It is a free server service provided by Github. To use Gitpage, you have to have a Github account. Here is how to set up Github on your computer.
+            </p>
+            <hr class = content>
+        </div>
 
-</div>
+        <div class = section>
+            <h1 class = content id = "M2"> The Basics </h1>
+            <p class = content> something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...</p>
+        </div>
 
-<div class = section>
-<h1 class = content id = "M2"> The Basics </h1>
-<p class = content> something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...</p>
-</div>
-
-<div class = section>
-<h1 class = content id = "M3"> For the More Advanturous </h1>
-<p class = content> something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...</p>
-</div>
+        <div class = section>
+            <h1 class = content id = "M3"> For the More Advanturous </h1>
+            <p class = content> something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...</p>
+            <hr class = content>
+        </div>
 
 
-<div class = section>
-<h1 class = content id = "M4"> Example </h1>
-<p class = content> something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...</p>
-</div>
+        <div class = section>
+            <h1 class = content id = "M4"> Example </h1>
+            <p class = content> something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...something...</p>
+            <hr class = content>
+        </div>
