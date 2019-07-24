@@ -74,7 +74,7 @@
 		</div>
 
 		<div class = "fullsize" onClick = "exitFullsize()">
-			<img id = "fullpic" src="image/gallery/fullsize/photo_01.JPG" alt=""> 		
+			<img id = "fullpic" src="" alt=""> 		
 		</div>
 
 		<div class = "content">
@@ -125,6 +125,7 @@
 			for(i = 0; i<ary.length; i++) {
 				ary[i].style.visibility = "hidden";
 			}
+			document.getElementById("fullpic").src = "";
 		}
 	</script>
 </html>
