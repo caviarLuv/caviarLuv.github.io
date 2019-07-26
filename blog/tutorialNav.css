@@ -31,10 +31,10 @@ a {
 #addOil {
 	width: 80px;
 	height: 80px;
-	position: fixed;
-	bottom: 10%;
-	right: 10px;
-	visibility: visible;
+	position: absolute;
+	bottom: 3px;
+	left: 5px;
+	visibility: hidden;
 }
 
 #cn {

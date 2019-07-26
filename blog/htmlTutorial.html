@@ -17,6 +17,7 @@
 
 <body>
 	<div class = navigation onmouseenter= "addOil()"  onmouseleave="goneOil()" >
+		<img id = addOil src="addOil.png" alt="">
 		<img id = menuIcon src="menuIcon.png" alt=""></img>
 		<ul class = menu>
 			<li class = subMenu id = "reset" onClick = "activation(this)"> <a href="#Top"> ^TOP </a> </li>
@@ -30,7 +31,6 @@
 	</div>
 			
 	<div class = content id = "contents">
-	<img id = addOil src="addOil.png" alt="">
 		<div class = section>
 			<h1 class = content id = "Top"> Learning Web Design from Zero </h1>
 			<p class = content> This is a basic tutorial for beginner to learn web design from no previous knowledge on HTML and CSS. The goal of the tutorial is to teach you basic HTML and CSS so that you can create your own website. There are many simlar tutorials out there, however, I found them way too complicated and unexciting to read, so I created my own version. I am by no means a HTML/CSS master, but I hope this website could help you toward your website making dream. </p>
@@ -115,12 +115,15 @@
 		}
 	}
 
+
 	function addOil() {
-		document.getElementById("addOil").style.visibility = "visible";
+		var elem = document.getElementById("addOil");
+		elem.style.visibility = "visible";
 	}
 
 	function goneOil() {
-		document.getElementById("addOil").style.visibility = "hidden";
+		var elem = document.getElementById("addOil");
+		elem.style.visibility = "hidden";
 	}
 
 </script>

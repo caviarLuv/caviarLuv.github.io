@@ -52,6 +52,47 @@
 				text-align: left;
 				font-size: 24px;
 			}
+
+			.outer {
+				font-size: 0;
+				box-sizing: border-box;
+				position: relative;
+				display: inline-block;
+				margin: 0;
+				height: 550px;
+				width: calc(100%/3);
+			}
+			
+			.banner {
+				margin-top: 50px;
+			}
+
+			.inner {
+				font-size: 32px;
+				line-height: calc(550px - 16px);
+				box-sizing: border-box;
+				text-align: center;
+				position: absolute;
+				display: inline-block;
+				height: 100%;
+				width: 100%;
+				margin:0;
+				top: 0;
+				left: 0;	
+			}
+			
+			.inner:hover {
+				background-color: darkgray;
+				transition: 0.9s;
+				opacity: 0.7;
+			}
+
+			
+			img.outer {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
 		</style>
 	</head>
 
@@ -63,17 +104,18 @@
 				<li><a class = "menuList" href="gallery.html"> Gallery</a></li>
 				<li><a class = "menuList" href="about.html"> About Me</a></li>
 				<li class = "menuList" id = "active"> Home </a></li>
-
 			</ul>
 		</div>	
 
+		<div class = "banner">
+			<div class = "outer"><img class = "outer" src="image/food.JPG" alt=""><div class = "inner" id = "inner_1" onmouseover="showText('inner_1', 'Food.')" onmouseleave="hideText('inner_1')"></div></div><div class = "outer"><img class = "outer" src="image/gallery/fullsize/photo_05.JPG" alt=""><div class = "inner" id = "inner_2" onmouseover="showText('inner_2', 'Code.')" onmouseleave="hideText('inner_2')"></div></div><div class = "outer"><img class = "outer" src="image/gallery/fullsize/photo_02.JPG" alt=""><div class = "inner" id = "inner_3" onmouseover="showText('inner_3', 'Snap.')" onmouseleave="hideText('inner_3')"></div></div>
+		</div>
 		
 		<div class = content>
 			<div class = "content_1">
-			<img src="image/banner.JPG" alt="banner" width = 70% height = 70%>
-			<p class = "paragraph">Some text some text some text some text..Some text some text some text some text..Some text some text some text some text..Some text some text some text some text..Some text some text some text some text..Some text some text some text some text..Some text some text some text some text..Some text some text some text some text..Some text some text some text some text..Some text some text some text some text..Some text some text some text some text..Some text some text some text some text..Some text some text some text some text..Some text some text some text some text..Some text some text some text some text..Some text some text some text some text..Some text some text some text some text..</p>
+				<p class = "paragraph">Some text some text some text some text..Some text some text some text some text..Some text some text some text some text..Some text some text some text some text..Some text some text some text some text..Some text some text some text some text..Some text some text some text some text..Some text some text some text some text..Some text some text some text some text..Some text some text some text some text..Some text some text some text some text..Some text some text some text some text..Some text some text some text some text..Some text some text some text some text..Some text some text some text some text..Some text some text some text some text..Some text some text some text some text..</p>
 				<hr>
-		</div>
+			</div>
 
 
 			<div class = content_2>
@@ -93,4 +135,13 @@
 		  	<p id = footer> Ashley 2019 | caviarluv.github.io</p>
 		 </div>
 	</body>
+
+	<script>
+		function showText(e, text) {
+			document.getElementById(e).innerHTML = text;
+		}
+		function hideText(e) {
+			document.getElementById(e).innerHTML = "";
+		}
+	</script>
 </html>
