@@ -97,7 +97,8 @@
 				object-fit: cover;
 			}
 
-			#banner {
+			.banner_L {
+				display: block;
 				position: absolute;
 				font-size: 60px;
 				font-weight: bold;
@@ -109,9 +110,20 @@
 				font-family: 'Bungee Shade', cursive;
 			}
 
+			button {
+				font-size: 32px;
+				width: 170px;
+				background-color: #4875B4;
+				border-style: none;
+				color: white;
+				font-family: 'Ubuntu', sans-serif;
+			}
+
 			.content_2 {
 				display: none;
 			}
+
+
 		</style>
 	</head>
 
@@ -127,7 +139,9 @@
 		</div>	
 
 		<div class = "banner">
-			<p id = "banner">Code the Future</p>
+			<p class = "banner_L">Code the Future <span><button onclick= "window.open('http://www.linkedin.com/in/tszting-yu', '_blank')">Linkedin
+			</button></span></p>
+			
 			<div class = "outer"></div><div class = "outer"><img class = "outer" src="image/gallery/fullsize/photo_05.JPG" alt=""><div class = "inner" id = "inner_2" onmouseover="showText('inner_2', 'Code.')" onmouseleave="hideText('inner_2')"></div></div><div class = "outer"><img class = "outer" src="image/gallery/fullsize/photo_02.JPG" alt=""><div class = "inner" id = "inner_3" onmouseover="showText('inner_3', 'Snap.')" onmouseleave="hideText('inner_3')"></div></div>
 		</div>
 		
