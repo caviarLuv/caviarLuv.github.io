@@ -8,6 +8,8 @@
 		<link rel="stylesheet" href="footer.css">
 		<link rel="stylesheet" href="content.css">
 		<link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet'>
+		<link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Bungee+Outline|Bungee+Shade&display=swap" rel="stylesheet">
 		<title>Tsz Ting Yu | Computer Scientist</title>
 		
 		<style>
@@ -50,7 +52,8 @@
 			
 			h2.content_2 {
 				text-align: left;
-				font-size: 24px;
+				font-family: 'Ubuntu', sans-serif;
+				font-size: 34px;
 			}
 
 			.outer {
@@ -93,6 +96,22 @@
 				height: 100%;
 				object-fit: cover;
 			}
+
+			#banner {
+				position: absolute;
+				font-size: 60px;
+				font-weight: bold;
+				z-index: 900;
+				color: black;
+				top: 190px;
+				left: 50px;
+				width: 200px;
+				font-family: 'Bungee Shade', cursive;
+			}
+
+			.content_2 {
+				display: none;
+			}
 		</style>
 	</head>
 
@@ -100,21 +119,20 @@
 		
 		<div class = "header">
 			<ul class = "navigation">
-				<li class = "siteName"> T.Y. | Computer Scientist </li>
-				<li><a class = "menuList" href="gallery.html"> Gallery</a></li>
-				<li><a class = "menuList" href="about.html"> About Me</a></li>
-				<li class = "menuList" id = "active"> Home </a></li>
+				<li class = "siteName"> T.Y. | Computer Scientist </li> 
+				<li><a class = "menuList" href="gallery.html">Gallery</a></li>
+				<li><a class = "menuList" href="about.html">About Me</a></li>
+				<li class = "menuList" id = "active">Home</a></li>
 			</ul>
 		</div>	
 
 		<div class = "banner">
-			<div class = "outer"><img class = "outer" src="image/food.jpg" alt=""><div class = "inner" id = "inner_1" onmouseover="showText('inner_1', 'Food.')" onmouseleave="hideText('inner_1')"></div></div><div class = "outer"><img class = "outer" src="image/gallery/fullsize/photo_05.JPG" alt=""><div class = "inner" id = "inner_2" onmouseover="showText('inner_2', 'Code.')" onmouseleave="hideText('inner_2')"></div></div><div class = "outer"><img class = "outer" src="image/gallery/fullsize/photo_02.JPG" alt=""><div class = "inner" id = "inner_3" onmouseover="showText('inner_3', 'Snap.')" onmouseleave="hideText('inner_3')"></div></div>
+			<p id = "banner">Code the Future</p>
+			<div class = "outer"></div><div class = "outer"><img class = "outer" src="image/gallery/fullsize/photo_05.JPG" alt=""><div class = "inner" id = "inner_2" onmouseover="showText('inner_2', 'Code.')" onmouseleave="hideText('inner_2')"></div></div><div class = "outer"><img class = "outer" src="image/gallery/fullsize/photo_02.JPG" alt=""><div class = "inner" id = "inner_3" onmouseover="showText('inner_3', 'Snap.')" onmouseleave="hideText('inner_3')"></div></div>
 		</div>
 		
 		<div class = content>
 			<div class = "content_1">
-				<p class = "paragraph">Some text some text some text some text..Some text some text some text some text..Some text some text some text some text..Some text some text some text some text..Some text some text some text some text..Some text some text some text some text..Some text some text some text some text..Some text some text some text some text..Some text some text some text some text..Some text some text some text some text..Some text some text some text some text..Some text some text some text some text..Some text some text some text some text..Some text some text some text some text..Some text some text some text some text..Some text some text some text some text..Some text some text some text some text..</p>
-				<hr>
 			</div>
 
 
