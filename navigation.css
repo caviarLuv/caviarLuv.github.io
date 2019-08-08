@@ -79,9 +79,14 @@ ul.fullMenu {
 	text-align: left;
 }
 
-.fullMenu:hover:not(#active) {
+.fullMenu:hover:not(#activeFull) {
 	transition: 1s;
 	text-decoration: underline;	
+}
+
+#activeFull {
+	text-decoration: underline;
+	font-weight: bold;
 }
 
 .fullMenu {

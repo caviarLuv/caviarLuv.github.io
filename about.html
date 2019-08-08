@@ -62,7 +62,7 @@
 		 <div id = "fullMenu" onClick = "hideSelf('fullMenu')">
 			<ul class = fullMenu> 
 				<li><a class = "fullMenu" href="index.html">Home</a></li>
-				<li><a class = "fullMenu" id = "active">About Me</a></li>
+				<li><a class = "fullMenu" id = "activeFull">About Me</a></li>
 				<li><a class = "fullMenu" href="gallery.html">Gallery</a></li>
 			</ul>
 		</div>
@@ -97,7 +97,7 @@
 				'<ul class = "navigation"><li class = "siteName"> T.Y. | Computer Scientist </li> <li><a class = "menuList" onClick = "showMenu()"> Menu </a></li></ul>';
 			}
 			else {
-				document.getElementById("header").innerHTML = '<ul class = "navigation"><li class = "siteName"> T.Y. | Computer Scientist </li> <li><a class = "menuList" href="gallery.html">Gallery</a></li><li><a class = "menuList" href="about.html">About Me</a></li><li class = "menuList" id = "active">Home</a></li></ul>';
+				document.getElementById("header").innerHTML = '<ul class = "navigation"><li class = "siteName"> T.Y. | Computer Scientist </li><li><a class = "menuList" href="gallery.html"> Gallery</a></li><li class = "menuList" id = "active"> About Me</a></li><li><a class = "menuList" href = "index.html"> Home </a></li></ul>';
 			}
 		}
 
