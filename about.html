@@ -49,8 +49,8 @@
 		</style>
 	</head>
 
-	<body>
-		<div class = "header">
+	<body id = 'window' onresize = "adjust()" onload = "adjust()">
+		<div id = "header">
 			<ul class = "navigation">
 				<li class = "siteName"> T.Y. | Computer Scientist </li>
 				<li><a class = "menuList" href="gallery.html"> Gallery</a></li>
@@ -58,6 +58,15 @@
 				<li><a class = "menuList" href = "index.html"> Home </a></li>
 			</ul>
 		</div>
+
+		 <div id = "fullMenu" onClick = "hideSelf('fullMenu')">
+			<ul class = fullMenu> 
+				<li><a class = "fullMenu" href="index.html">Home</a></li>
+				<li><a class = "fullMenu" id = "active">About Me</a></li>
+				<li><a class = "fullMenu" href="gallery.html">Gallery</a></li>
+			</ul>
+		</div>
+		
 
 		<div class = content>
 			<div class = about>
@@ -80,4 +89,23 @@
 		  	<p id = footer> Ashley 2019 | caviarluv.github.io</p>
 		</div>
 	</body>
+
+	<script>
+		function adjust() {
+			if(document.getElementById('window').offsetWidth <= 630) {
+				document.getElementById("header").innerHTML = 
+				'<ul class = "navigation"><li class = "siteName"> T.Y. | Computer Scientist </li> <li><a class = "menuList" onClick = "showMenu()"> Menu </a></li></ul>';
+			}
+			else {
+				document.getElementById("header").innerHTML = '<ul class = "navigation"><li class = "siteName"> T.Y. | Computer Scientist </li> <li><a class = "menuList" href="gallery.html">Gallery</a></li><li><a class = "menuList" href="about.html">About Me</a></li><li class = "menuList" id = "active">Home</a></li></ul>';
+			}
+		}
+
+		function showMenu() {
+			document.getElementById('fullMenu').style.display = 'block';
+		}
+		function hideSelf(e) {
+			document.getElementById(e).style.display = 'none';
+		}
+	</script>
 </html>
