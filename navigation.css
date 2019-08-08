@@ -4,7 +4,7 @@ body {
 }
 
 #header {
-	height: 50px;
+	height: 60px;
 }
 
 .navigation {
@@ -15,14 +15,12 @@ body {
 	margin: 0;
 	padding: 0;
 	width: 100%;
-
-	//background-color: #8FBC8F;
 	background-color: white;
-
 	list-style-type: none;
 	overflow: hidden;
 }
 
+/*
 .siteName{
 	position: fixed;
 	float: right;
@@ -38,7 +36,18 @@ body {
 	text-decoration: overline;
 	display: block;
 }
+*/
 
+
+
+#logo{
+	width: 60px;
+	height: 60px;
+	position: fixed;
+	z-index: 999;
+	left: 70px;
+	object-fit: contain;
+}
 .menuList {
 	font-family: "Courier New", Courier, monospace;
 	font-size: 16px;
@@ -50,10 +59,10 @@ body {
 	display: block;
 }
 
+
 .menuList:hover:not(#active) {
 	transition: 1s;
 	text-decoration: underline;
-	background-color: salmon;
 }
 
 #active{
@@ -101,5 +110,6 @@ ul.fullMenu {
 }
 
 a.fullMenu {
+
 	width: 100%;
 }

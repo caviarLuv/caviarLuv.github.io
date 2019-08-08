@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="icon" type="image/ico" href="icon/titleIcon.JPG" />
+		<link rel="icon" type="image/ico" href="image/logo.PNG" />
 		<link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet'>
 		<link rel="stylesheet" href="navigation.css">
 		<link rel="stylesheet" href="footer.css">
@@ -52,7 +52,7 @@
 	<body id = 'window' onresize = "adjust()" onload = "adjust()">
 		<div id = "header">
 			<ul class = "navigation">
-				<li class = "siteName"> T.Y. | Computer Scientist </li>
+				<li> <img id = "logo" src="image/logo.PNG" alt=""> </li> 
 				<li><a class = "menuList" href="gallery.html"> Gallery</a></li>
 				<li class = "menuList" id = "active"> About Me</a></li>
 				<li><a class = "menuList" href = "index.html"> Home </a></li>
@@ -94,10 +94,10 @@
 		function adjust() {
 			if(document.getElementById('window').offsetWidth <= 630) {
 				document.getElementById("header").innerHTML = 
-				'<ul class = "navigation"><li class = "siteName"> T.Y. | Computer Scientist </li> <li><a class = "menuList" onClick = "showMenu()"> Menu </a></li></ul>';
+				'<ul class = "navigation"><li> <img id = "logo" src="image/logo.PNG" alt=""> </li>  <li><a class = "menuList" onClick = "showMenu()"> Menu </a></li></ul>';
 			}
 			else {
-				document.getElementById("header").innerHTML = '<ul class = "navigation"><li class = "siteName"> T.Y. | Computer Scientist </li><li><a class = "menuList" href="gallery.html"> Gallery</a></li><li class = "menuList" id = "active"> About Me</a></li><li><a class = "menuList" href = "index.html"> Home </a></li></ul>';
+				document.getElementById("header").innerHTML = '<ul class = "navigation"><li> <img id = "logo" src="image/logo.PNG" alt=""> </li><li><a class = "menuList" href="gallery.html"> Gallery</a></li><li class = "menuList" id = "active"> About Me</a></li><li><a class = "menuList" href = "index.html"> Home </a></li></ul>';
 			}
 		}
 
