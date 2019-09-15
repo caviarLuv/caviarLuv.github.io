@@ -63,17 +63,18 @@
 				display: inline-block;
 				margin: 0;
 				height: 550px;
+
+				vertical-align: middle;
 				width: calc(100%/3);
 			}
 			
-			.banner {
+			#banner {
 				margin-top: 50px;
-				min-width: 1030px;
+				//min-width: 1030px;
 			}
 
 			.inner {
 				font-size: 32px;
-				line-height: calc(550px - 16px);
 				box-sizing: border-box;
 				text-align: center;
 				position: absolute;
@@ -90,7 +91,6 @@
 				transition: 0.9s;
 				opacity: 0.7;
 			}
-
 			
 			img.outer {
 				width: 100%;
@@ -98,7 +98,7 @@
 				object-fit: cover;
 			}
 
-			.banner_L {
+			#banner_L {
 				display: block;
 				position: absolute;
 				font-size: 60px;
@@ -119,11 +119,12 @@
 				color: white;
 				font-family: 'Ubuntu', sans-serif;
 			}
-
 			.content_2 {
 				display: none;
 			}
-
+			body {
+				overflow-x: hidden;
+			}
 			
 		</style>
 	</head>
@@ -141,11 +142,11 @@
 		</div>
 		
 
-		<div class = "banner">
-			<p class = "banner_L">Code the Future <span><button onclick= "window.open('http://www.linkedin.com/in/tszting-yu', '_blank')">Linkedin
+		<div id = "banner">
+			<p id = "banner_L">Code the Future<span><button onclick= "window.open('http://www.linkedin.com/in/tszting-yu', '_blank')">Linkedin
 			</button></span></p>
 			
-			<div class = "outer"></div><div class = "outer"><img class = "outer" src="image/code.JPG" alt=""><div class = "inner" id = "inner_2" onmouseover="showText('inner_2', 'Code.')" onmouseleave="hideText('inner_2')"></div></div><div class = "outer"><img class = "outer" src="image/gallery/fullsize/photo_02.JPG" alt=""><div class = "inner" id = "inner_3" onmouseover="showText('inner_3', 'Snap.')" onmouseleave="hideText('inner_3')"></div></div>
+			<div class = "outer"></div><div class = "outer"><img class = "outer" src="image/code.JPG" alt=""><div class = "inner" id = "inner_2" onmouseover="showText('inner_2', '~ Code. ~')" onmouseleave="hideText('inner_2')"></div></div><div class = "outer"><img class = "outer" src="image/gallery/fullsize/photo_02.JPG" alt=""><div class = "inner" id = "inner_3" onmouseover="showText('inner_3', '~ Snap. ~')" onmouseleave="hideText('inner_3')"></div></div>
 		</div>
 		
 		<div class = content>
@@ -173,19 +174,45 @@
 	</body>
 
 	<script>
-		function showText(e, text) {
-			document.getElementById(e).innerHTML = text;
+		function showText(e, text, des) {
+			document.getElementById(e).innerHTML = '<span style = "top:100px; position: relative; height: 100%;">' + text + '</span>' + '<br>' + '<span style = "top:100px; position: relative; height: 100%;">' + des + '</span>' ;
 		}
 		function hideText(e) {
 			document.getElementById(e).innerHTML = "";
 		}
 		function adjust() {
-			if(document.getElementById('window').offsetWidth <= 630) {
+			var outer = document.getElementsByClassName('outer');
+			if(document.getElementById('window').offsetWidth <= 680) {
 				document.getElementById('header').innerHTML = 
 				'<ul class = "navigation"><li> <img id = "logo" src="image/logo.PNG" alt=""> </li> <li><a class = "menuList" onClick = "showMenu()"> Menu </a></li></ul>';
+				document.getElementById('banner').width=window.innerWidth+"px";
+				for(i = 0; i<outer.length; i++) {
+					console.log(window.innerWidth);
+					outer[i].style.width = window.innerWidth +"px";
+				}
+				var inner = document.getElementsByClassName('inner');
+				inner[inner.length-1].style.width = window.innerWidth+"px";
 			}
 			else {
 				document.getElementById('header').innerHTML = '<ul class = "navigation"><li><img id = "logo" src="image/logo.PNG" alt=""> </li><li><a class = "menuList" href="gallery.html">Gallery</a></li><li><a class = "menuList" href="about.html">About Me</a></li><li class = "menuList" id = "active">Home</a></li></ul>';
+				if(document.getElementById('window').offsetWidth > 1020){
+				
+				document.getElementById('banner').width= window.screen.width + "px";
+					for(i = 0; i<outer.length; i++) {
+					outer[i].style.width = window.innerWidth/3 +"px";
+				}
+				var inner = document.getElementsByClassName('inner');
+				inner[inner.length-1].style.width = window.innerWidth/3+"px";
+				}
+				else {
+				document.getElementById('banner').width= window.screen.width + "px";
+				for(i = 0; i<outer.length - 1; i++) {
+					outer[i].style.width = window.innerWidth/2+"px";
+				}
+				outer[outer.length - 1].style.width = window.innerWidth+"px";
+				var inner = document.getElementsByClassName('inner');
+				inner[inner.length-1].style.width = window.innerWidth+"px";
+			}
 			}
 		}
 
@@ -196,6 +223,7 @@
 			}
 			document.getElementById('fullMenu').style.display = 'block';
 		}
+
 		function hideSelf(e) {
 			document.getElementById(e).style.display = 'none';
 		}
