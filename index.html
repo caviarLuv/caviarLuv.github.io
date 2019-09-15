@@ -123,7 +123,7 @@
 				display: none;
 			}
 			body {
-				overflow-x: hidden;
+				//overflow-x: hidden;
 			}
 			
 		</style>
@@ -149,23 +149,7 @@
 			<div class = "outer"></div><div class = "outer"><img class = "outer" src="image/code.JPG" alt=""><div class = "inner" id = "inner_2" onmouseover="showText('inner_2', '~ Code. ~')" onmouseleave="hideText('inner_2')"></div></div><div class = "outer"><img class = "outer" src="image/gallery/fullsize/photo_02.JPG" alt=""><div class = "inner" id = "inner_3" onmouseover="showText('inner_3', '~ Snap. ~')" onmouseleave="hideText('inner_3')"></div></div>
 		</div>
 		
-		<div class = content>
-			<div class = "content_1">
-			</div>
-
-
-			<div class = content_2>
-				<h2 class = content_2>What's New</h2>
-				<ul id = highlights>
-					<li class = h_pics> <img class=h_pics src="image/htmlCSS.JPG" alt="htmlTutorial"> 
-					<p class = h_pics>
-					Want to learn basic website development? Look no further. Here is a ultimate guide for you to learn HTML and CSS from zero. <span> <a href="blog/htmlTutorial.html" target = "_blank" title = "Start your HTML journey now!"> (read more...)</a></span>	
-					</p></li>
-					<li class = h_pics> <img class = h_pics src="image/gallery.jpg" alt="gallery"> <p class = h_pics>Here are some of my favorite works. Enjoy! <span> <a href="gallery.html" title = "Gallery"> (read more...) </a></span></p></li>
-					<li class = h_pics> <img class = h_pics src="image/comingSoon.jpg" alt="coming soon"> <p class = h_pics>Coming Soon...</p></li>
-				</ul>
-			</div>
-		 </div>
+	
 
 		 <div class = "footer">
 		  	<p id = footer> Ashley 2019 | caviarluv.github.io</p>
@@ -185,7 +169,7 @@
 			if(document.getElementById('window').offsetWidth <= 680) {
 				document.getElementById('header').innerHTML = 
 				'<ul class = "navigation"><li> <img id = "logo" src="image/logo.PNG" alt=""> </li> <li><a class = "menuList" onClick = "showMenu()"> Menu </a></li></ul>';
-				document.getElementById('banner').width=window.innerWidth+"px";
+				document.getElementById('banner').width=window.screen.width+"px";
 				for(i = 0; i<outer.length; i++) {
 					console.log(window.innerWidth);
 					outer[i].style.width = window.innerWidth +"px";
