@@ -57,6 +57,7 @@
 			}
 
 			.outer {
+				word-wrap: break-word;
 				font-size: 0;
 				box-sizing: border-box;
 				position: relative;
@@ -87,9 +88,14 @@
 			}
 			
 			.inner:hover {
-				background-color: darkgray;
+				background-color: #CCE5FF;
 				transition: 0.9s;
-				opacity: 0.7;
+				opacity: 0.9;
+			}
+
+			.outer:hover {
+				transition: 0.9s;
+				opacity: 0.9;
 			}
 			
 			img.outer {
@@ -146,7 +152,7 @@
 			<p id = "banner_L">Code the Future<span><button onclick= "window.open('http://www.linkedin.com/in/tszting-yu', '_blank')">Linkedin
 			</button></span></p>
 			
-			<div class = "outer"></div><div class = "outer"><img class = "outer" src="image/code.JPG" alt=""><div class = "inner" id = "inner_2" onmouseover="showText('inner_2', '~ Code. ~')" onmouseleave="hideText('inner_2')"></div></div><div class = "outer"><img class = "outer" src="image/gallery/fullsize/photo_02.JPG" alt=""><div class = "inner" id = "inner_3" onmouseover="showText('inner_3', '~ Snap. ~')" onmouseleave="hideText('inner_3')"></div></div>
+			<div class = "outer"></div><div class = "outer"><img class = "outer" src="image/code.JPG" alt=""><div class = "inner" id = "inner_2" onmouseover="showText('inner_2', 'CODE', '#Creativity. <br>#Optimism. <br>#Determined. <br>#Empowerment.')" onmouseleave="hideText('inner_2')"></div></div><div class = "outer"><img class = "outer" src="image/gallery/fullsize/photo_02.JPG" alt=""><div class = "inner" id = "inner_3" onmouseover="showText('inner_3', 'FUTURE', 'Funny.<br>Unique.<br>Trustful.<br>U as in YU!<br>Reliable.<br>Epic.')" onmouseleave="hideText('inner_3')"></div></div>
 		</div>
 		
 	
@@ -159,7 +165,7 @@
 
 	<script>
 		function showText(e, text, des) {
-			document.getElementById(e).innerHTML = '<span style = "top:100px; position: relative; height: 100%;">' + text + '</span>' + '<br>' + '<span style = "top:100px; position: relative; height: 100%;">' + des + '</span>' ;
+			document.getElementById(e).innerHTML = '<span style = "font-weight: bold;top:25%; position: relative; height: 100%;">' + text + '</span>' + '<br>' + '<span style = "top:25%; position: relative; height: 100%;">' + des + '</span>' ;
 		}
 		function hideText(e) {
 			document.getElementById(e).innerHTML = "";
